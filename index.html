@@ -1,0 +1,308 @@
+# songmeoseum.github.io
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>김민송 | Aesthetic Engineer</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #0b0b0b;
+      color: #f5f5f5;
+      font-family: "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      padding: 120px 40px 80px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(255,46,154,0.15), rgba(0,0,0,0));
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: calc(12.6rem - 10px);
+      font-weight: 700;
+      color: #ff2e9a;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    header h2 {
+      margin-top: 25px;
+      font-size: 2.4rem;
+      font-weight: 800;
+      opacity: 0.8;
+    }
+
+    section {
+      padding: 80px 10vw;
+    }
+
+    section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 32px;
+      color: #ff7abf;
+    }
+
+    .about p {
+      max-width: 900px;
+      line-height: 1.9;
+      font-size: 1.05rem;
+      opacity: 0.9;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,46,154,0.25);
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: rgba(255,46,154,0.08);
+      box-shadow: 0 20px 40px rgba(255,46,154,0.25);
+    }
+
+    .card h4 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #ff9fd1;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      opacity: 0.85;
+    }
+
+    .tags {
+      margin: 16px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      border-radius: 999px;
+      background: rgba(255,46,154,0.2);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      background: #ff2e9a;
+      color: #000;
+      transition: filter 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      filter: brightness(1.1);
+      transform: scale(1.05);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 1rem;
+    }
+
+    .skill {
+      padding: 14px 22px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,46,154,0.25);
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .skill:hover {
+      background: rgba(255,46,154,0.15);
+      transform: translateY(-4px);
+    }
+
+    .contact a {
+      display: block;
+      margin-bottom: 10px;
+      opacity: 0.85;
+      transition: opacity 0.2s ease, color 0.2s ease;
+    }
+
+    .contact a:hover {
+      opacity: 1;
+      color: #ff2e9a;
+    }
+
+    footer {
+      padding: 40px;
+      text-align: center;
+      font-size: 0.8rem;
+      opacity: 0.5;
+    }
+    body { cursor: none; }
+    #pink-cursor {
+      position: fixed;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #ff2e9a;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+    }
+
+    .heart {
+      position: fixed;
+      pointer-events: none;
+      user-select: none;
+      color: #ff2e9a;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <header id="main-header">
+    <h1>김민송</h1>
+    <h2>Aesthetic Engineer</h2>
+  </header>
+
+  <section class="about">
+    <h3>About</h3>
+    <p>
+      예쁜 것에 진심인 사람. 세상의 모든 예쁨을 수집하고 해부하고 다시 조립한다.
+      예쁨은 감정이고, 감정은 설계 가능하다고 믿는다. 미적 감각과 기술을 섞어 사람을 흔드는 인터랙션을 만들며,
+      코드조차 디자인의 일부라고 생각한다.
+      <br /><br />
+      웹과 인터랙션을 설계하는 한편, 직접 셀렉한 의류를 소개하고 판매하는 프로젝트도 병행한다.
+      옷을 고르는 일 역시 하나의 UI 설계라고 믿으며, 촉감·실루엣·분위기를 디지털 언어로 번역하는 데 관심이 많다.
+      정답보단 분위기, 안정성보단 실험을 택한다.
+      예쁜 UI에 이유를 붙이고, 기능과 스타일 모두에 감정을 입히는 엔지니어.
+    </p>
+  </section>
+
+  <section>
+    <h3>Projects</h3>
+    <div class="projects">
+      <div class="card">
+        <h4>Emotional UI Lab</h4>
+        <p>감정 기반 인터랙션을 실험하는 개인 프로젝트.</p>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">CSS</span>
+        </div>
+        <a class="btn" href="#">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h4>Punk Motion System</h4>
+        <p>과감한 모션과 색 대비를 활용한 웹 실험.</p>
+        <div class="tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">GSAP</span>
+        </div>
+        <a class="btn" href="#">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h4>Design-Driven API</h4>
+        <p>기능보다 감정 흐름을 우선한 서버 설계.</p>
+        <div class="tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">AWS</span>
+        </div>
+        <a class="btn" href="#">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Skills</h3>
+    <div class="skills">
+      <div class="skill">끝내주게 잠자기<br><span style="opacity:0.6;font-size:0.8rem">Legendary Sleeping</span></div>
+      <div class="skill">멋드러지게 숨쉬기<br><span style="opacity:0.6;font-size:0.8rem">Stylish Breathing</span></div>
+      <div class="skill">밤티 디자인 비난하기<br><span style="opacity:0.6;font-size:0.8rem">Criticizing Bad Taste</span></div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h3>Contact</h3>
+    <a href="mailto:songmeoseum@gmail.com">songmeoseum@gmail.com</a>
+    <a href="https://www.instagram.com/bisyoujophobia" target="_blank">Instagram @bisyoujophobia</a>
+  </section>
+
+  <footer>
+    © 2026 Kim Minsong
+  </footer>
+
+  <div id="pink-cursor"></div>
+
+  <script>
+    const cursor = document.getElementById('pink-cursor');
+    const header = document.getElementById('main-header');
+
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const fadeStart = 0;
+      const fadeEnd = 300;
+      const progress = Math.min(Math.max((scrollY - fadeStart) / (fadeEnd - fadeStart), 0), 1);
+
+      header.style.opacity = `${1 - progress}`;
+      header.style.transform = `translateY(${progress * -40}px)`;
+    });
+
+    document.addEventListener('click', (e) => {
+      for (let i = 0; i < 6; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.textContent = '❤';
+
+        const size = Math.random() * 16 + 10;
+        heart.style.fontSize = size + 'px';
+        heart.style.left = e.clientX + 'px';
+        heart.style.top = e.clientY + 'px';
+
+        const angle = Math.random() * Math.PI * 2;
+        const distance = Math.random() * 50 + 20;
+
+        heart.animate([
+          { transform: 'translate(0,0)', opacity: 1 },
+          {
+            transform: `translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`,
+            opacity: 0
+          }
+        ], {
+          duration: 400,
+          easing: 'ease-out'
+        });
+
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 400);
+      }
+    });
+  </script>
+</body>
+</html>
